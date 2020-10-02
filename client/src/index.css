@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat-Bold";
+}
+
+/* this is to handle image picture in this challenge i dont do anything to image either at the client or server side*/
+.img-custom {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#title {
+  background-color: black;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Sections Navbar*/
+.colored-section {
+  background-color: black;
+  color: #fff;
+  box-shadow: 0px 3px 5px rgba(10, 10, 10, 0.7);
+  border-radius: 0px 0px 10px 10px
+}
+
+.navbar {
+  padding: 0 0 4.5rem;
+
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+.add-button {
+  margin: 5% 3% 5% 0;
+}
+
+.title-image {
+  width: 80%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 5%;
+}
+
+
+/* product item */
+.item {
+  width: 10%;
+  height: 40vh;
+
+}
+
+.card-custom {
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px rgba(10, 10, 10, 0.7);
+  transition: transform 0.2s;
+}
+
+.card-custom:hover {
+  border-radius: 20px;
+  transform: scale(1.05);
+}
+
+.card {
+  border: none;
+  box-shadow: 0px 2px 5px rgba(10, 10, 10, 0.7);
+
+}
+
+/* Navbar Media Query for Responsive */
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
+  .img-custom {
+    width: 150px;
+    height: 150px;
+    object-fit: scale-down;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width : 1400px) {
+  .title-image {
+    width: 50%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 5%;
+
+  }
+
+  .img-custom {
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+  }
+
+}
+
+@media only screen and (min-width : 1900px) {
+  .title-image {
+    width: 39%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 5%;
+
+  }
+
+  .img-custom {
+    width: 200px;
+    height: 200px;
+    object-fit: scale-down;
+  }
+
+}
+
+
+.flexCustom {
+  transition: transform 0.2s;
+  font-size: 1.5em;
+  background-color: #ff4c68;
+
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+.flexCustom:hover {
+  transform: scale(1.02);
+}
+
+.card-header-custom {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+  background-color: #ff4c68;
+
+  color: white;
+  font-weight: bold;
+
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+
+/* detai product */
+.img-custom2 {
+  width: 400px;
+  height: 400px;
+  object-fit: scale-down;
+}
+
+.test-text {
+  word-wrap: break-word;
+  text-align: left;
+  font-size: 1.3em;
+
+}
+
+.card-header-detail {
+  background-color: #ff4c68;
+  color: white;
+}
